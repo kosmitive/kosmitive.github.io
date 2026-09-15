@@ -1,0 +1,112 @@
+/* Small adjustments to the vendored jekyllBear theme. */
+:root, :root[data-theme="light"] {
+  color-scheme: light;
+  --background-color: #fffff0;
+  --heading-color: #202020;
+  --text-color: #202020;
+  --link-color: #202020;
+  --visited-color: #202020;
+  --main-color: #202020;
+  --code-background-color: #ffffff;
+  --code-color: #202020;
+  --blockquote-color: #b6b5b0;
+  --border-color: #ddddd7;
+  --glow-color-light: transparent;
+  --glow-color-medium: transparent;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    --background-color: #000000;
+    --heading-color: #ffffff;
+    --text-color: #ffffff;
+    --link-color: #ffffff;
+    --visited-color: #ffffff;
+    --main-color: #ffffff;
+    --code-background-color: #171717;
+    --code-color: #ffffff;
+    --blockquote-color: #aaaaaa;
+    --border-color: #444444;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --background-color: #000000;
+  --heading-color: #ffffff;
+  --text-color: #ffffff;
+  --link-color: #ffffff;
+  --visited-color: #ffffff;
+  --main-color: #ffffff;
+  --code-background-color: #171717;
+  --code-color: #ffffff;
+  --blockquote-color: #aaaaaa;
+  --border-color: #444444;
+}
+#theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  width: 48px;
+  height: 28px;
+  padding: 3px;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  background: var(--code-background-color);
+  color: var(--text-color);
+  font: inherit;
+  cursor: pointer;
+}
+.theme-thumb { width: 20px; height: 20px; border-radius: 50%; background: var(--text-color); transform: translateX(0); transition: transform .18s ease; }
+:root[data-theme="dark"] .theme-thumb { transform: translateX(20px); }
+.topbar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+.topbar nav { display: flex; gap: 1rem; }
+.topbar nav a { margin: 0; }
+.site-brand { display: flex; align-items: center; gap: 1rem; margin: 1rem 0 1.5rem; }
+.site-brand .title { margin: 0; }
+.header-avatar { display: block; flex: 0 0 56px; border: 0; }
+.header-avatar img { display: block; width: 56px; height: 56px; border-radius: 50%; object-fit: cover; }
+.site-tagline { margin: .25rem 0 0; font-size: .8rem; }
+.theme-control { display: flex; align-items: center; gap: .5rem; font-size: .85rem; }
+.theme-control[hidden] { display: none; }
+@media (prefers-reduced-motion: reduce) { .theme-thumb { transition: none; } }
+#theme-toggle:hover { background: var(--code-background-color); }
+#theme-toggle:focus-visible { outline: 2px solid var(--link-color); outline-offset: 3px; }
+header, footer { border-color: var(--border-color); border-width: 1px; border-style: solid; }
+header { border-top: 0; border-left: 0; border-right: 0; }
+footer { border-bottom: 0; border-left: 0; border-right: 0; }
+a { border-bottom: 0; text-decoration: underline; text-underline-offset: .2em; }
+a:hover { background-color: transparent; color: var(--link-color); }
+header { margin-bottom: 2.5rem; }
+nav a { margin-right: 1rem; }
+.title a { color: inherit; text-decoration: none; }
+main { min-height: 35vh; }
+mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; padding: .5rem 0; }
+a:hover { text-shadow: none; }
+
+.profile {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+  padding: 2rem 0 4rem;
+}
+.profile-photo {
+  display: block;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.profile-eyebrow { margin: 0 0 .4rem; color: var(--link-color); }
+.profile-intro h1 { font-size: clamp(2rem, 5vw, 2.75rem); line-height: 1.15; margin: 0 0 1.5rem; letter-spacing: -.04em; }
+.profile-summary { font-size: 1.15rem; line-height: 1.65; }
+.profile-intro > p:last-child { margin-bottom: 0; }
+@media (max-width: 560px) {
+  .profile { grid-template-columns: 88px minmax(0, 1fr); gap: 1rem; padding-top: .5rem; align-items: start; }
+  .profile-photo { width: 88px; height: 88px; }
+  .profile-intro h1 { font-size: clamp(1.35rem, 5vw, 2rem); }
+  .profile-summary { font-size: 1rem; }
+}
+
+html, body { background-color: var(--background-color); color: var(--text-color); }
+
+html { scrollbar-gutter: stable; }

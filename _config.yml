@@ -1,0 +1,18 @@
+title: kosmitive
+description: Notes on machine learning and inference.
+url: "https://kosmitive.github.io"
+baseurl: ""
+timezone: Australia/Sydney
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+permalink: /blog/:title/
+plugins:
+  - jekyll-feed
+exclude:
+  - AGENTS.md
+  - README.md
+  - LICENSE.txt
+  - Gemfile
+  - Gemfile.lock
+  - vendor

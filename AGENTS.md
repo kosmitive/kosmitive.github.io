@@ -1,0 +1,4 @@
+- use git for data versioning
+- always use lower case letters for commit message
+- never use your name in the commit message
+- keep commit message short

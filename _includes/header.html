@@ -1,0 +1,17 @@
+  <header class="site-header">
+    <div class="site-brand">
+      <a class="header-avatar" href="{{ '/' | relative_url }}" aria-label="Home"><img src="{{ '/github_profile.jpg' | relative_url }}" alt="" width="56" height="56"></a>
+      <div>
+        <h2 class="title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h2>
+        <p class="site-tagline">machine learning. inference. curiosity.</p>
+      </div>
+    </div>
+    <div class="topbar">
+      <nav aria-label="Main navigation"><a href="{{ '/' | relative_url }}">Home</a> <a href="{{ '/blog/' | relative_url }}">Blog</a> <a href="https://github.com/kosmitive">GitHub</a></nav>
+      <div id="theme-control" class="theme-control" hidden>
+        <span aria-hidden="true">Light</span>
+        <button id="theme-toggle" type="button" role="switch" aria-label="Dark mode" aria-checked="false"><span class="theme-thumb"></span></button>
+        <span aria-hidden="true">Dark</span>
+      </div>
+    </div>
+  </header>

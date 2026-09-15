@@ -1,0 +1,13 @@
+---
+layout: default
+---
+{{ content }}
+
+<ul class="blog-posts">
+  {% for post in site.posts %}
+  <li>
+    <span><i><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time></i></span>
+    <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+  </li>
+  {% endfor %}
+</ul>
