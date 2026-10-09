@@ -32,7 +32,7 @@ tools: jax, pytorch, ray, c++, python
 
 ## contact
 
-open for contract work. [marsem.dev@gmail.com](mailto:marsem.dev@gmail.com)  
+open for contract work. <a href="#" id="mail" data-u="marsem.dev" data-d="gmail.com">marsem.dev [at] gmail [dot] com</a>  
 · [github](https://github.com/kosmitive)  
 · [freelancermap](https://www.freelancermap.com/profile/markus-semmler)
 

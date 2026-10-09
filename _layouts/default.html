@@ -11,5 +11,13 @@
   <main>
     {{ content }}
   </main>
+  <script>
+    var m = document.getElementById('mail');
+    if (m) {
+      var a = m.getAttribute('data-u') + '@' + m.getAttribute('data-d');
+      m.href = 'mailto:' + a;
+      m.textContent = a;
+    }
+  </script>
 </body>
 </html>
