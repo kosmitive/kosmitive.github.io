@@ -16,6 +16,7 @@ available for remote work with overlap for eu and us hours.
 - bayesian multi-object tracker with loopy belief propagation: counting things you can only half see
 - rl agent for microscope calibration, transferred from simulation to the real device
 - batched influence functions for neural networks: which training example made the model say that?
+- dynamic pricing and demand forecasting: a constant-elasticity pricing model with linear regression on competitor prices and other features (freelance), and an ekf-based inbound volume forecast about 12% better than the yearly average
 - anomaly detection on process logs with a logbert variant
 - mpo and trpo implemented from scratch in pytorch
 
