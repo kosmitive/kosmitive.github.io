@@ -7,7 +7,7 @@ layout: default
 *i work on things that have to make good decisions while not being sure what's going on.*
 
 ml, reinforcement learning and probabilistic inference engineer.  
-available for remote work with overlap for eu and us hours. open to relocating.
+available for remote work with overlap for eu and us hours.
 
 `p(good outcome | noisy data) = ?`
 
