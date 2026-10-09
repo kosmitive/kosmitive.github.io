@@ -9,7 +9,7 @@ layout: default
 ml, reinforcement learning and probabilistic inference engineer.  
 available for remote work with overlap for eu and us hours.
 
-`p(good outcome | noisy data) = ?`
+`p(a, o | s) = π(a | s) p(o | s, a)`
 
 ## work
 
@@ -29,10 +29,6 @@ tools: jax, pytorch, ray, c++, python
 
 - [fisher information approximations in policy gradients](https://doi.org/10.1007/978-3-030-41188-6_6)
 - [[re] classwise-shapley values for data valuation](https://openreview.net/forum?id=srFEYJkqD7), tmlr, reproducibility certified
-
-## now
-
-building a state-space-model rl environment in jax.
 
 ## contact
 
