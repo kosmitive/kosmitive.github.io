@@ -28,7 +28,7 @@ tools: jax, pytorch, ray, c++, python
 ## papers
 
 - [fisher information approximations in policy gradients](https://doi.org/10.1007/978-3-030-41188-6_6)
-- [[re] classwise-shapley values for data valuation](https://openreview.net/forum?id=srFEYJkqD7), tmlr, reproducibility certified
+- [[re] classwise-shapley values for data valuation](https://openreview.net/forum?id=srFEYJkqD7), tmlr, reproducibility certified · [code](https://github.com/kosmitive/reproduction-classwise-shapley)
 
 ## contact
 
