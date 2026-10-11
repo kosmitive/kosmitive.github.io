@@ -1,0 +1,6 @@
+title: markus semmler
+description: ml, reinforcement learning and probabilistic inference engineer
+url: "https://kosmitive.github.io"
+markdown: kramdown
+exclude:
+  - README.md
